@@ -129,6 +129,26 @@ body {
     }
 }
 
+@media (min-width: 810px) and (max-width: 1440px) {
+    .header-nav {
+        margin-top: 48px;
+    }
+    
+    .text-section {
+        padding: 48px 0;
+    }
+}
+
+@media (min-width: 1441px) {
+    .header-nav {
+        margin-top: 60px;
+    }
+    
+    .text-section {
+        padding: 60px 0;
+    }
+}
+
 @media (max-width: 350px) {
     .text-content {
         min-width: calc(100vw - 40px);
