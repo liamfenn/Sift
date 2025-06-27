@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    font-size: 14.4px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    background-color: #f5f5f5;
+    color: #262626;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    margin-top: 40px;
+}
+
+.nav-left, .nav-center, .nav-right {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #262626;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-center:hover {
+    color: #999999;
+}
+
+.nav-center:visited {
+    color: #262626;
+}
+
+.main-content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.sphere-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sphere {
+    max-width: 500px;
+    width: 35vw;
+    min-width: 340px;
+    height: auto;
+    display: block;
+}
+
+.text-section {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    max-width: 310px;
+    min-width: 310px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    color: #999999;
+}
+
+.text-content p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    cursor: pointer;
+    font-weight: normal;
+    color: #262626;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #999999;
+}
+
+.contact-link:visited {
+    color: #262626;
+}
+
+
+
+@media (max-width: 768px) {
+    .header-nav {
+        padding: 15px 20px;
+    }
+    
+    .main-content {
+        padding: 40px 20px;
+    }
+    
+    .sphere {
+        width: 45vw;
+        min-width: 340px;
+    }
+}
+
+@media (max-width: 350px) {
+    .text-content {
+        min-width: calc(100vw - 40px);
+        padding: 0 20px;
+    }
+} 
