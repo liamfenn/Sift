@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    font-family: ui-monospace, 'SF Mono', SFMono-Regular, 'Monaco', 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
     font-size: 14.4px;
     line-height: 125%;
     letter-spacing: -0.03em;
-    background-color: #f5f5f5;
+    background-color: #fff;
     color: #262626;
     min-height: 100vh;
     display: flex;
@@ -73,7 +73,7 @@ body {
 .text-section {
     width: 100%;
     padding: 40px 0;
-    background-color: #f5f5f5;
+    background-color: #fff;
     margin-bottom: 40px;
 }
 
